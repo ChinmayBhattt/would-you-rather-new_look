@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Would You Rather | Premium Game Experience</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Poppins:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="bg-gradient"></div>
+  
+  <div class="container">
+    <!-- Landing Screen -->
+    <div class="screen landing-screen active">
+      <h1>Would You Rather?</h1>
+      <p>The ultimate game of impossible choices. Pick your preference and see how you compare to others!</p>
+      <button class="btn start-btn">Start Game ✨</button>
+    </div>
+    
+    <!-- Question Screen -->
+    <div class="screen question-screen">
+      <div class="progress-container">
+        <div class="progress-bar"></div>
+      </div>
+      <div class="question-count">Question <span id="current-question">1</span> of <span id="total-questions">10</span></div>
+      <h2 class="question-text">Would you rather...?</h2>
+      
+      <div class="options-container">
+        <div class="option" data-option="A">
+          <span class="emoji">🌟</span>
+          <h3>Option A</h3>
+          <p>Description for option A goes here</p>
+          <div class="result-bar">
+            <div class="result-fill"></div>
+          </div>
+          <div class="result-text">0%</div>
+        </div>
+        
+        <div class="option" data-option="B">
+          <span class="emoji">✨</span>
+          <h3>Option B</h3>
+          <p>Description for option B goes here</p>
+          <div class="result-bar">
+            <div class="result-fill"></div>
+          </div>
+          <div class="result-text">0%</div>
+        </div>
+      </div>
+      
+      <button class="btn next-btn">Next Question →</button>
+    </div>
+    
+    <!-- Results Screen -->
+    <div class="screen results-screen">
+      <h2>Thanks for Playing! 🎉</h2>
+      <p>You've completed all the questions! How did your choices compare to others?</p>
+      
+      <div class="action-buttons">
+        <button class="action-btn restart-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M3 12a9 9 0 1 0 9-9 9.75 9.75 0 0 0-6.74 2.74L3 8"></path>
+            <path d="M3 3v5h5"></path>
+          </svg>
+          Play Again
+        </button>
+        
+        <button class="action-btn share-btn">
+          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"></path>
+            <polyline points="16 6 12 2 8 6"></polyline>
+            <line x1="12" y1="2" x2="12" y2="15"></line>
+          </svg>
+          Share Results
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
